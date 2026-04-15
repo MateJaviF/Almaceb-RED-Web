@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="data/css/images/Almaceb_Logo.png">
+    <title>Apartado de Fotos</title>
+</head>
+<body>
+    <div class="cuerpo" id = "cuerpo">
+        <div class="publicacion">
+            <div class="perfil" id="perfil">
+                <img src="" alt="Foto de Perfil">
+                <h1>Nombre de Usuario</h1>
+            </div>
+            <div class="foto">
+                <img src="" alt="Foto de la Publicación">
+                <p>Descripción de la Foto</p>
+            </div>
+            <div class="interacciones" id="interacciones">
+                <button id="megusta"><img src="" alt="Me gusta" ></button> <span id="num_megusta">0</span>
+                <button id="comentarios"><img src="" alt="Comentar"></button> <span id="num_comentarios">0</span>
+                <button id="carrito">Agregar al carrito</button>
+                <img src="" alt="carrito">
+                <span id="num_carrito">0</span>
+            </div>
+        </div>
+        <div id="comentario" style="display: none;">
+            <input type="text"  placeholder="Escribe algo...">
+            <button id="comentar">Añadir comentario</button>
+        </div>
+    </div>
+    <script>
+        const megusta = document.getElementById("megusta");
+        const display_megusta = document.getElementById("num_megusta")
+        megusta.addEventListener('click', () => {
+            let valorMegustaActual = parseInt(display_megusta.textContent);
+            let valorMegustaNuevo = valorMegustaActual + 1;
+            display_megusta.textContent = valorMegustaNuevo;
+        });
+    </script>
+    <script>
+        const carrito = document.getElementById("carrito");
+        const display_carrito = document.getElementById("num_carrito");
+        carrito.addEventListener('click', () => {
+            let valorCarritoActual = parseInt(display_carrito.textContent)
+            let valorCarritoNuevo = valorCarritoActual + 1;
+            display_carrito.textContent = valorCarritoNuevo;
+        });
+    </script>
+    <script>
+        const botonComentario = document.getElementById("comentarios");
+        const inputComentario = document.getElementById("comentario");
+        const comentar = document.getElementById("comentar");
+        const display_comentario = document.getElementById("num_comentarios")
+        botonComentario.addEventListener('click', () => {
+            inputComentario.style.display = "block";
+        });
+        comentar.addEventListener('click', () => {
+            let valorComentario = parseInt(display_comentario.textContent)
+            let valorComentarioNuevo =  valorComentario + 1;
+            display_comentario.textContent = valorComentarioNuevo;
+            inputComentario.style.display = "none";
+        });
+    </script>
+</body>
+</html>
