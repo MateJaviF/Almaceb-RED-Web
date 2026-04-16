@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 body {
+    background-image: url(../images/backgrounds/sant.bg-dif.jpg);
     display: flex;
     justify-content: center;
     position: relative;
 }
 #BG {
     position: absolute;
-    background-image: url(images/BG.jpg);
     height: 100%;
     width: 100%;
     background-position: center;
@@ -25,7 +25,7 @@ body {
     position: relative;
     flex-direction: column;
     width: 800px;
-    height: 880px;
+    height: auto;
     border-color: rgb(100, 148, 237);
     border-style: solid;
     box-shadow: 0 0 16px rgba(0,0,0,0.15);
