@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (likeBtn && countLike) {
             likeBtn.addEventListener('click', () => {
                 const current = parseInt(countLike.textContent, 10) || 0;
-                countLike.textContent = current + 1;
+                if (countLike.textContent === "0") {
+                    countLike.textContent = current + 1;
+                }
+                else {
+                    countLike.textContent = current - 1;
+                }
             });
         }
 
@@ -21,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             addCartBtn.addEventListener('click', () => {
                 const current = parseInt(countCart.textContent, 10) || 0;
                 countCart.textContent = current + 1;
+                alert("!Añadido al carrito!")
             });
         }
 
