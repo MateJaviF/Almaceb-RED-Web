@@ -1,3 +1,21 @@
+:root {
+    --green-lineart: #c1ff72;
+    --red: #f44d61;
+    --button-green: #00bf63;
+    --blue-lineart: #004aad;
+    --blue-diamont: #71bfff;
+    --golden-star:#ffd000;
+    --metal: #b0c7e5;
+    --bronce: #d39039;
+}
+
+
+h3{color: var(--blue-lineart);}
+
+p{color: var(--blue-lineart);}
+
+.business-header i {color: var(--golden-star); font-size: 30px;}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,9 +35,9 @@ body {
     flex-direction: column;
     background: #fff;
     max-width: 700px;
-    margin: 24px auto;
+    margin: 34px auto;
     border-radius: 16px;
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    box-shadow: 0 0 16px var(--blue-lineart);
     padding: 32px 24px;
     gap: 20px;
 }
@@ -32,41 +50,41 @@ body {
 }
 #navigation i {
     border-radius: 10px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     padding: 5px;
     font-size: 30px;
-    color: darkblue;
+    color: var(--blue-lineart);
 }
 #navigation i:hover {
     opacity: 0.7;
-    border-color: rgb(100, 148, 237);
+    border-color: var(--blue-lineart);
 }
 
 .header {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .header h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     margin: 0;
-    background-color: #e74c3c;
+    background-color:var(--red);
     color:  #fff;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 4px 8px;
 }
 
 .header h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin: 8px 0 0 0;
-    border-radius: 5px;
-    background-color: greenyellow;
-    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    border-radius: 15px;
+    background-color: var(--green-lineart);
+    color: black;
 }
 
 .business-list {
@@ -82,9 +100,8 @@ body {
     background: #fff;
     border-radius: 12px;
     border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0,0,0);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-width: 1,5px;
+    border-color: var(--blue-lineart);
     overflow: hidden;
     position: relative;
     gap: 20px;
@@ -109,42 +126,32 @@ body {
 }
 .follow {
     padding: 7px 15px;
-    border-width: 2px;
+    border-width: 3.5px;
     border-radius: 8px;
-    border-color: lightgreen;
-    background-color: rgb(5, 185, 5);
+    font-weight: bold;
+    border-color: var(--green-lineart);
+    background-color: var(--button-green);
     color: #fff;
 }
 
 .follow:hover {
-    background-color: lightgreen;
-    border-color: rgb(5, 185, 5);
+    background-color: var(--green-lineart);
+    border-color: var(--button-green);
+    color: var(--button-green);
 }
 
-.deleted {
-    padding: 7px 15px;
-    border-width: 2px;
-    border-radius: 8px;
-    border-color: #e74c3c;
-    background-color: red;
-}
-
-.deleted:hover {
-    background-color: #e74c3c;
-    border-color: red;
-}
-
+ 
 .business-buttons i {
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
     padding: 5px;
     font-size: 30px;
-    color: darkblue;
+    color: var(--blue-lineart);
 }
 .business-buttons i:hover {
     opacity: 0.7;
-    border-color: rgb(100, 148, 237);
+    border-color: var(--blue-lineart);
 }
 
 @media (max-width: 600px) {
