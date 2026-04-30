@@ -18,11 +18,6 @@
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         }
-        #container {
-            height: 100vh;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
         .external-content {
             width: 100%;
             min-height: 400px;
@@ -31,58 +26,50 @@
     </style>
 </head>
 <body>
-    <main id="BG">
-        <div id="container" class="card dark-mode">
-            <div class="box-top">
-                <nav id="navigation">
-                    <a href="javascript:history.back()">
-                        <i class="bi bi-arrow-return-left"></i>
+    <main id="container" class="card dark-mode">
+        <header class="box-top">
+            <nav id="navigation">
+                <a href="javascript:history.back()">
+                    <i class="bi bi-arrow-return-left"></i>
+                </a>
+                <a href="report.html">
+                    <i class="bi-flag"></i>
+                </a>
+            </nav>
+            <section class="content">
+                <div id="perfil">
+                    <img src="../images/pfps/unk.jpg" alt="Avatar">
+                    <a href="config.html">
+                        <i class="bi-pencil"></i>
                     </a>
-                    <a href="report.html">
-                        <i class="bi-flag"></i>
+                </div>
+                <h1>Panaderia La Juana</h1>
+                <p>200 Seguidores</p>
+                <div class="div-buttons">
+                    <button class="seguir">Seguir</button>
+                    <button class="comentar">Comentar</button>
+                </div>
+                <nav class="nav-buttons">
+                    <a href="promo.html">
+                        <i class="bi-megaphone"></i>
+                    </a>
+                    <a href="favorites.html">
+                        <i class="bi-heart"></i>
+                    </a>
+                    <a href="gallery.html">
+                        <i class="bi-box2-fill"></i>
+                    </a>
+                    <a href="info.html">
+                        <i class="bi-info-circle"></i>
                     </a>
                 </nav>
-                <div class="content">
-                    <div id="perfil">
-                        <img 
-                        src="../images/pfps/unk.jpg" 
-                        alt="Avatar"
-                        >
-                        <a href="config.html">
-                            <i class="bi-pencil"></i>
-                        </a>
-                    </div>
-                    <h1>Panaderia La Juana</h1>
-                    <p>200 Seguidores</p>
-                    <div class="div-buttons">
-                        <button class="seguir">Seguir</button>
-                        <button class="comentar">Comentar</button>
-                    </div>
-                    <div>
+            </section>
+        </header>
 
-                    </div>
-                    <nav class="nav-buttons">
-                        <a href="promo.html">
-                            <i class="bi-megaphone"></i>
-                        </a>
-                        <a href="favorites.html">
-                            <i class="bi-heart"></i>
-                        </a>
-                        <a href="gallery.html">
-                            <i class="bi-box2-fill"></i>
-                        </a>
-                        <a href="info.html">
-                            <i class="bi-info-circle"></i>
-                        </a>
-                    </nav>
-                </div>
-            </div>
+        <div id="black-line"></div>
 
-            <div id="black-line"></div>
-
-            <div id="dynamic-content">
-                <h2>Seleccione algun botón</h2>
-            </div>
+        <div id="dynamic-content">
+            <h2>Seleccione algun botón</h2>
         </div>
     </main>
     <script>
