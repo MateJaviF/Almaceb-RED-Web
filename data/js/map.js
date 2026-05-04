@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 4. Datos dummy para los puntos de interés cerca de San Ramón
-    const iconImage = "data/images/icons/coso_sin_fondo.png";
+    const iconImage = "../images/icons/coso_sin_fondo.png";
     const locations = [
   {
     coords: [-33.5532855, -70.6528958],
