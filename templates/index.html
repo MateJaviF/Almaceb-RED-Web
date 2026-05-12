@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="{{ url_for('static', filename ='images/Almaceb_logo.png') }}">
+</head>
+<body>
+    <h1>Bienvenido a la pagina de Registro de AlmacebRED, por favor ingresa tus datos.</h1>
+    <hr>
+    <form action="/procesar_request" method="post">
+        <label>Nombre Completo</label>
+        <input type="text" name="nombre_completo">
+        <label>E-Mail</label>
+        <input type="email" name="email" placeholder="email123@gmail.com">
+        <label>Contraseña</label>
+        <input type="password" name="password" placeholder="contraseña123">
+        <input type="submit" value="Crear Usuario">
+    </form>
+</body>
+</html>
