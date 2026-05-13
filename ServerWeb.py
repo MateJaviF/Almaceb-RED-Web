@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, session
 
 app = Flask(__name__)
 
-app.secret_key = "holamama67pcpcpcpcpcpcpsaojdsafaasdgewsa}oñrg{a4t3w786435pvdsgfdsesgfg23r9ufsñekldsf{pjlgdfsñ{gnj}}"
+app.secret_key = "o9OzdHo5STkPOZEXwPpp5xWyIPEpTWaltL8PLN5772V"
 
 @app.route("/")
 def iniciar():
