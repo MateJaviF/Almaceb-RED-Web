@@ -1,0 +1,16 @@
+body {
+    background-image: url(../images/inicio-bg.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+h2{
+    color: white;
+}
+h1{
+    color: white;
+}
+label{
+    color: white;
+}

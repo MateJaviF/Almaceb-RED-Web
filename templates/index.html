@@ -10,13 +10,30 @@
 <body>
     <h1>Bienvenido a la pagina de Registro de AlmacebRED, por favor ingresa tus datos.</h1>
     <hr>
-    <form action="/procesar_request" method="post">
+    <form action="/procesar_request" method="post", enctype="multipart/form-data">
         <label>Nombre Completo</label>
-        <input type="text" name="nombre_completo">
+        <input type="text" name="nombre_completo" required>
+
+        <label>Foto</label>
+        <input type="file" name="archivo">
+
         <label>E-Mail</label>
-        <input type="email" name="email" placeholder="email123@gmail.com">
+        <input type="email" name="email" placeholder="email123@gmail.com" required>
+
         <label>Contraseña</label>
-        <input type="password" name="password" placeholder="contraseña123">
+        <input type="password" name="password" placeholder="contraseña123" required>
+
+        <label>Tipo de Local</label>
+        <input type="text" name="tipo_local" placeholder="Panaderia" required> 
+
+        <label>Horario de Atencion</label>
+        <input type="text" name="hora_atencion" required>
+
+        <label>Descripcion</label>
+        <textarea name="descripcion" placeholder="Ven a disfrutar pan recién salidos del horno..." >
+        Sin descripcion
+        </textarea>
+        
         <input type="submit" value="Crear Usuario">
     </form>
 </body>
