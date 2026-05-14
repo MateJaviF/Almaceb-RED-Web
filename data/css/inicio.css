@@ -1,10 +1,11 @@
 /* Para el inicio */
 body {
-    background-image: url(../images/backgrounds/inicio-bg.jpg);
-    color: #ffffff;
+    background-color: #fff;
+    color: #000;
 }
 
 #sec-1 header {
+    background: linear-gradient(to bottom, #00bf80, #ffffff);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +54,50 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+
+/* Carrusel */
+.carousel {
+    width: 600px;
+    height: 400px;
+    margin: 20px 0;
+    user-select: none;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-img {
+    height: 100%;
+    object-fit: cover;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.carousel-caption {
+    bottom: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin: 1em;
+}
+
+.carousel-caption h5 {
+    color: #ffffff;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-caption p {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
 
 /* Móvil */
 @media (max-width: 768px) {
