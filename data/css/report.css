@@ -5,6 +5,7 @@
 }
 body {
     background-image: url(../images/backgrounds/sant.bg-dif.jpg);
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     position: relative;
@@ -130,16 +131,22 @@ body {
 h3 {
  margin-left: 140px;
  margin-top: 10px;
-
+ display: flex;
+ justify-content: center;
 }
 
-.barra_texto {
+#barra_texto {
 margin-top: 40px;
-width: 500px;
+width: 30vw;
 margin-right: 50px;
 }
 
 .mini2 {
-     margin-right: 230px;
-         
+
+     justify-content: center;
+}
+#report_message {
+    color: red;
+    text-align: center;
+    display: none;
 }

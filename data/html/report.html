@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" type="image/x-icon" href="../images/icons/icon.png">
+    <link rel="icon" type="image/x-icon" href="../images/icons/denuncia.png">
     <link rel="stylesheet" href="../css/report.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/darkcss.css">
@@ -26,25 +26,29 @@
                 <h2 class="mini2"> ¿Cuál es su problema? </h2>
                 <div class="buttons-content">
                     <div class="buttons">
-                        <button type="button"> No es el mismo vendedor de la cuenta </button>
-                        <button type="button"> No cumple con las promociones </button>
-                        <button type="button"> tienda falsa </button>
+                        <button type="button" id="button1"> No es el mismo vendedor de la cuenta </button>
+                        <button type="button" id="button2"> No cumple con las promociones </button>
+                        <button type="button" id="button3"> Tienda falsa </button>
                     </div>
                     <div class="buttons">
-                        <button type="button"> No esta promocionando mi tienda </button>
-                        <button type="button"> Mala seguridad con mis da   tos personales </button>
-                        <button type="button"> No puedo actualizar las promos </button>
+                        <button type="button" id="button4"> No esta promocionando mi tienda </button>
+                        <button type="button" id="button5"> Mala seguridad con mis datos personales </button>
+                        <button type="button" id="button6"> No puedo actualizar las promos </button>
                     </div>
                 </div>
                 <div class="ultime">
                     <h3 >Otro:</h3>
                     <input type="text" name="other"
-                    class="barra_texto">
+                    id="barra_texto">
+                </div>
+                <div>
+                    <h2 id="report_message"> alo mama six seven</h2>
                 </div>
                 <input type="submit" id="submit" name="other">
             </div>
         </div>
-    </div>   
+    </div>
+    <script src="../js/reports.js"></script>   
 </body>
 </html>
 
